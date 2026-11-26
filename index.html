@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fbf6ef">
-    <meta name="description" content="认识米拉 MIRA：一位住在屏幕另一边、喜欢收集小小日常的数字伙伴。">
-    <title>MIRA 米拉 — 把今天说给我听</title>
-    <link rel="stylesheet" href="./styles.css?v=2">
-    <script defer src="./script.js?v=2"></script>
+    <meta name="description" content="和米拉体验一段虚拟散步：挑选场景、调整布景灯光，再把这次约会安静封存。">
+    <title>MIRA 米拉 · 把一句话变成一起去过的地方</title>
+    <link rel="stylesheet" href="./styles.css?v=3">
+    <script defer src="./script.js?v=3"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">跳到主要内容</a>
@@ -17,224 +17,242 @@
         <span class="brand-name">MIRA<small>米拉</small></span>
       </a>
       <nav class="main-nav" aria-label="主导航">
-        <a href="#features">功能特点</a>
-        <a href="#steps">如何开始</a>
-        <a class="nav-cta" href="#demo">体验对话 <span aria-hidden="true">✧</span></a>
+        <a href="#features">场景体验</a>
+        <a href="#how-it-works">如何开始</a>
+        <a class="nav-cta" href="#scene-demo">预览散步 <span aria-hidden="true">✧</span></a>
       </nav>
     </header>
 
     <main id="main">
-      <section class="hero section-shell" aria-labelledby="hero-title">
+      <section class="hero section-shell" aria-labelledby="hero-title" data-scene-beat="0">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> 米拉 · AI 对话伙伴 <span class="eyebrow-star" aria-hidden="true">✧</span></p>
-          <h1 id="hero-title">把今天<br><em>说给我听。</em></h1>
-          <p class="hero-description">聊聊日常、兴趣和心情。<br>从一句简单的话开始，看看米拉怎样接着聊。</p>
+          <p class="eyebrow"><span class="eyebrow-dot"></span> 米拉 · AI 虚拟散步伙伴 <span class="eyebrow-star" aria-hidden="true">✧</span></p>
+          <h1 id="hero-title">把一句话，<br><em>变成一起去过的地方。</em></h1>
+          <p class="hero-description">选一个安静的布景，和米拉散一小段步。<br>场景只属于你们的虚拟对话。</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#demo">体验一次对话 <span aria-hidden="true">↘</span></a>
-            <a class="text-link" href="#features">了解功能 <span aria-hidden="true">↓</span></a>
+            <a class="button button-primary" href="#scene-demo">看看虚拟散步 <span aria-hidden="true">↘</span></a>
+            <a class="text-link" href="#features">了解场景体验 <span aria-hidden="true">↓</span></a>
           </div>
         </div>
         <figure class="hero-visual">
           <div class="hero-orbit orbit-a" aria-hidden="true"></div>
           <div class="hero-orbit orbit-b" aria-hidden="true"></div>
-          <img class="hero-photo" src="./assets/hero.webp" alt="复古动画风格的米拉，带着星星发夹，向你微笑" fetchpriority="high">
+          <img class="hero-photo" src="./assets/hero.webp" alt="复古动画风格的米拉，白色双马尾和红色眼睛，带着星星发夹" fetchpriority="high">
           <div class="hero-sticker sticker-star" aria-hidden="true">✦</div>
           <div class="hero-sticker sticker-heart" aria-hidden="true">♡</div>
-          <figcaption class="hero-caption"><span class="caption-heart">♥</span> 你的日常聊天伙伴</figcaption>
+          <figcaption class="hero-caption"><span class="caption-heart">♥</span> 把日常，变成一段小小的约会</figcaption>
         </figure>
-        <div class="hero-bottomline"><span>日常闲聊 · 兴趣话题 · 心情整理</span><span>向下浏览 <span aria-hidden="true">↓</span></span></div>
+        <div class="hero-bottomline"><span>挑选布景 · 一起散步 · 随时封存</span><span>向下浏览 <span aria-hidden="true">↓</span></span></div>
       </section>
 
-      <section class="little-things section-shell" id="features" aria-labelledby="features-title">
+      <section class="little-things section-shell" id="features" aria-labelledby="features-title" data-scene-beat="1">
         <div class="section-heading reveal">
-          <div><p class="section-label">米拉能做什么</p><h2 id="features-title">从小话题开始，<br><em>自然地继续聊。</em></h2></div>
-          <p>不必准备好一段完整的故事。<br>先说出你此刻想到的就好。</p>
+          <div><p class="section-label">米拉的虚拟场景</p><h2 id="features-title">像一次小小的约会，<br><em>不用离开房间。</em></h2></div>
+          <p>挑一处喜欢的布景，<br>让对话有个共同的地方。</p>
         </div>
         <div class="memory-cards">
-          <article class="memory-card card-pink reveal"><span class="memory-symbol" aria-hidden="true">♡</span><p class="memory-kicker">日常闲聊</p><h3>从今天的小事<br>轻松开场</h3><span class="memory-foot">一句近况，也能自然聊下去</span></article>
-          <article class="memory-card card-lilac reveal"><span class="memory-symbol" aria-hidden="true">♫</span><p class="memory-kicker">兴趣话题</p><h3>沿着喜欢的事<br>多聊一会儿</h3><span class="memory-foot">音乐、天气和新发现都可以</span></article>
-          <article class="memory-card card-yellow reveal"><span class="memory-symbol" aria-hidden="true">✿</span><p class="memory-kicker">安静结束</p><h3>说一声晚安，<br>就到这里</h3><span class="memory-foot">清楚地结束每一次聊天</span></article>
+          <article class="memory-card card-pink reveal"><span class="memory-symbol" aria-hidden="true">✿</span><p class="memory-kicker">共同布景</p><h3>从一扇门前<br>开始散步</h3><span class="memory-foot">米拉只在虚拟布景里出现</span></article>
+          <article class="memory-card card-lilac reveal"><span class="memory-symbol" aria-hidden="true">☾</span><p class="memory-kicker">独立观众席</p><h3>场景与观众席<br>各自独立</h3><span class="memory-foot">观众席默认显示空白遮罩</span></article>
+          <article class="memory-card card-yellow reveal"><span class="memory-symbol" aria-hidden="true">♡</span><p class="memory-kicker">安静收尾</p><h3>封存场景，<br>结束这次散步</h3><span class="memory-foot">灯光操作只作用于布景区</span></article>
         </div>
       </section>
 
-      <section class="steps-section section-shell reveal" id="steps" aria-labelledby="steps-title">
+      <section class="steps-section section-shell reveal" id="how-it-works" aria-labelledby="steps-title" data-scene-beat="2">
         <div class="steps-heading">
           <p class="section-label">如何开始</p>
-          <h2 id="steps-title">一段轻松的对话，<br><em>只需要三步。</em></h2>
-          <p>米拉的安静时段有一个明确的收尾：你说晚安，这次对话就结束。</p>
+          <h2 id="steps-title">两个空间，<br><em>一条清楚的边界。</em></h2>
+          <p>左侧观众席保持空白；右侧布景区承载米拉和虚拟场景。灯光只属于布景。</p>
         </div>
         <ol class="steps-grid">
-          <li><span class="step-number">01</span><h3>选一个话题</h3><p>从日常、兴趣或心情开始。</p></li>
-          <li><span class="step-number">02</span><h3>顺着聊下去</h3><p>米拉接住你刚刚说的内容。</p></li>
-          <li><span class="step-number">03</span><h3>说晚安</h3><p>聊天结束，时间留给自己。</p></li>
+          <li><span class="step-number">01</span><h3>选一处布景</h3><p>和米拉在虚拟场景里散步。</p></li>
+          <li><span class="step-number">02</span><h3>调整场景灯光</h3><p>留一盏灯，或把灯熄掉。</p></li>
+          <li><span class="step-number">03</span><h3>封存这次散步</h3><p>布景灯光停止，观众席仍为空白。</p></li>
         </ol>
       </section>
 
-      <section class="story section-shell reveal" id="demo" aria-labelledby="demo-title">
-        <div class="story-intro">
-          <p class="section-label">日常对话示例</p>
-          <h2 id="demo-title">从今天有点累，<br><em>到一句晚安。</em></h2>
-          <p>看看一次完整的轻声对话怎样开始、怎样自然地结束。</p>
+      <section class="scene-demo-section section-shell reveal" id="scene-demo" data-scene-beat="3" data-preset-state="lit" data-sealed="false" aria-labelledby="scene-demo-title">
+        <div class="scene-demo-intro">
+          <p class="section-label">虚拟散步 · 可交互预览</p>
+          <h2 id="scene-demo-title">一起走到门口。<br><em>然后，好好说晚安。</em></h2>
+          <p>米拉只在布景区。观众席始终是一块空白遮罩。</p>
         </div>
-        <div class="hello-card demo-card" id="demo-card" aria-labelledby="demo-card-title">
-          <div class="hello-card-top"><span class="mini-avatar" aria-hidden="true">✦</span><h3 class="demo-card-title" id="demo-card-title">米拉 · 安静时段</h3><span class="sample-label">示例会话</span></div>
-          <p class="demo-prompt" id="demo-prompt">换一个开场话题</p>
-          <div class="demo-choices" role="group" aria-labelledby="demo-prompt">
-            <button class="demo-choice" type="button" data-demo-user="今天有点累。" data-demo-reply="那我们先不急着做什么。愿意说说今天最累的一件事吗？" aria-pressed="true">今天有点累</button>
-            <button class="demo-choice" type="button" data-demo-user="窗外的云好像棉花糖。" data-demo-reply="这个比喻很可爱。你看到的是一朵大大的，还是好几小团？" aria-pressed="false">聊聊天空</button>
-            <button class="demo-choice" type="button" data-demo-user="给我推荐一首歌吧。" data-demo-reply="你想听轻松一点的，还是适合散步时听的？我可以先按这个方向给你挑。" aria-pressed="false">推荐一首歌</button>
+        <div class="scene-console" aria-label="虚拟散步场景预览">
+          <div class="scene-console-top"><span class="mini-avatar" aria-hidden="true">✦</span><strong>散步预览</strong><span class="scene-console-status">本地场景</span></div>
+          <div class="scene-panes">
+            <figure class="scene-pane scene-pane-viewer" aria-labelledby="viewer-label">
+              <figcaption class="pane-label" id="viewer-label"><span class="pane-indicator" aria-hidden="true"></span>观众席 <small>空白遮罩</small></figcaption>
+              <div class="viewer-matte" aria-label="观众席保持空白，不显示布景内容">
+                <span class="matte-ring" aria-hidden="true">○</span>
+                <strong>空白遮罩</strong>
+                <span>不显示布景内容</span>
+              </div>
+            </figure>
+            <figure class="scene-pane scene-pane-set" aria-labelledby="set-label">
+              <figcaption class="pane-label" id="set-label"><span class="pane-indicator" aria-hidden="true"></span>布景区 <small>米拉的虚拟散步</small></figcaption>
+              <div class="scene-viewport">
+                <img class="scene-image" src="./assets/threshold.webp" alt="动画风格的走廊布景，米拉站在门口" loading="lazy">
+                <span class="scene-door-mark" aria-hidden="true">门口</span>
+                <span class="scene-lamp-glow" aria-hidden="true"></span>
+                <p class="scene-character-line">米拉：<br><span>到门口就好，我只送你到这里。</span></p>
+              </div>
+            </figure>
           </div>
-          <noscript>
-            <div class="demo-fallback" role="group" aria-label="示例对话选择">
-              <details open><summary>今天有点累</summary><p>那我们先不急着做什么。愿意说说今天最累的一件事吗？</p></details>
-              <details><summary>聊聊天空</summary><p>这个比喻很可爱。你看到的是一朵大大的，还是好几小团？</p></details>
-              <details><summary>推荐一首歌</summary><p>你想听轻松一点的，还是适合散步时听的？我可以先按这个方向给你挑。</p></details>
+          <div class="scene-control-bar">
+            <div class="demo-controls" role="group" aria-label="布景灯光预设">
+              <span class="control-label">布景灯光</span>
+              <button type="button" data-preset="lit" aria-pressed="true">留一盏灯</button>
+              <button type="button" data-preset="dim" aria-pressed="false">熄灯</button>
+              <button type="button" data-seal>封存这次散步</button>
+              <button type="button" data-reopen>重新打开场景</button>
             </div>
-          </noscript>
-          <div class="demo-transcript" aria-live="polite" aria-atomic="true">
-            <p class="bubble bubble-mira"><span>今天想从什么说起？</span><span class="bubble-time">23:41:00</span></p>
-            <p class="bubble bubble-you"><span id="demo-user" data-demo-sync="user">今天有点累。</span><span class="bubble-time">23:41:02</span></p>
-            <p class="bubble bubble-mira bubble-last"><span id="demo-reply" data-demo-sync="reply">那我们先不急着做什么。愿意说说今天最累的一件事吗？</span><span class="bubble-time">23:41:05</span></p>
-            <p class="bubble bubble-you"><span>我先去休息了。晚安。</span><span class="bubble-time">23:41:19</span></p>
-            <p class="bubble bubble-mira bubble-last"><span>好，晚安。今天的对话到这里。</span><span class="bubble-time">23:41:20</span></p>
-            <p class="chat-status"><span class="status-check" aria-hidden="true">✓</span> 对话已结束 · 23:41:21</p>
+            <p class="scene-status" data-light-status aria-live="polite">布景灯：亮起 · 观众席：空白。</p>
+            <p class="scene-status seal-status" data-seal-status aria-live="polite">场景还没有封存。</p>
           </div>
-          <p class="demo-note">预设对话示例 · 选择仅在本页生效，不会发送或保存。</p>
-          <span class="card-decoration deco-star" aria-hidden="true">✧</span>
-          <span class="card-decoration deco-heart" aria-hidden="true">♡</span>
+          <noscript><p class="scene-static-note">默认预览：留一盏灯。向下浏览可查看静态封存回执和场景回放。</p></noscript>
+          <p class="scene-local-note">本页为本地场景演示，不采集影像或位置。</p>
+        </div>
+        <a class="demo-exit" href="#top">随时返回首页 ↑</a>
+      </section>
+
+      <section class="receipt-section section-shell reveal" id="seal-receipt" aria-labelledby="receipt-title" data-scene-beat="4">
+        <div class="receipt-intro">
+          <p class="section-label">封存回执 · 示例</p>
+          <h2 id="receipt-title">散步结束。<br><em>边界仍然清楚。</em></h2>
+          <p>场景已经封存，灯光输出停止。观众席保持空白。</p>
+        </div>
+        <div class="receipt-panel receipt-normal">
+          <div class="receipt-heading"><span>虚拟场景 · 封存完成</span><strong>成功</strong></div>
+          <div class="receipt-panes">
+            <figure class="receipt-pane receipt-viewer">
+              <figcaption>观众席 · 空白遮罩</figcaption>
+              <div class="receipt-matte"><span aria-hidden="true">○</span><strong>仍为空白</strong></div>
+            </figure>
+            <figure class="receipt-pane receipt-set">
+              <figcaption>布景区 · 预设：<span data-preset-echo>留一盏灯</span></figcaption>
+              <div class="receipt-scene"><img src="./assets/threshold.webp" alt="已封存的动画走廊布景，灯光只留在布景区" loading="lazy"><span>灯光输出已停止</span></div>
+            </figure>
+          </div>
+          <p class="receipt-result"><span>布景区</span> <strong>已封存 · 输出停止</strong><span>观众席</span> <strong>空白遮罩 · 未接收布景</strong></p>
         </div>
       </section>
 
-      <section class="review section-shell reveal" id="review" aria-labelledby="review-title">
-        <div class="review-copy">
-          <p class="section-label">回顾 · 23:41</p>
-          <h2 id="review-title">刚刚的对话，<br><em>已经收好了。</em></h2>
-          <p>一条短短的时间线，方便你回想聊到哪里。</p>
+      <section class="receipt-check section-shell reveal" id="receipt-check" aria-labelledby="receipt-check-title" data-scene-beat="5">
+        <div class="receipt-check-copy">
+          <p class="section-label">再次查看回执</p>
+          <h2 id="receipt-check-title">布景已封存。<br><em>观众席却出现了门。</em></h2>
+          <p>右侧布景仍显示封存场景；左侧观众席的空白遮罩里，多出了一截门框。</p>
+          <p class="preset-echo-line">布景预设：<span data-preset-echo>留一盏灯</span></p>
         </div>
-        <div class="review-card" aria-label="示例会话回顾">
-          <div class="review-card-head"><span class="mini-avatar" aria-hidden="true">✦</span><strong>最近一次对话</strong><span class="review-state">已结束</span></div>
-          <div class="review-row"><time datetime="23:41:02">23:41:02</time><span class="review-dot"></span><p id="review-user" data-demo-sync="user">今天有点累。</p></div>
-          <div class="review-row"><time datetime="23:41:05">23:41:05</time><span class="review-dot"></span><p id="review-reply" data-demo-sync="reply">那我们先不急着做什么。愿意说说今天最累的一件事吗？</p></div>
-          <div class="review-row review-row-end"><time datetime="23:41:21">23:41:21</time><span class="review-dot"></span><p>你说晚安 · 对话结束</p></div>
-          <p class="review-card-foot">回顾已更新</p>
-          <div class="review-cover">
-            <img src="./assets/threshold.webp" alt="米拉的待机插画：她站在一段安静的走廊尽头" loading="lazy">
-            <div><strong>安静时段 · 米拉的待机插画</strong><span>回顾只保留文字和静态封面</span></div>
+        <div class="scene-console receipt-violation" aria-label="复查时出现异常的虚拟场景回执">
+          <div class="scene-console-top"><span class="mini-avatar" aria-hidden="true">✦</span><strong>封存回执 · 再次查看</strong><span class="scene-console-status">布景仍已封存</span></div>
+          <div class="scene-panes">
+            <figure class="scene-pane scene-pane-viewer viewer-leak" aria-labelledby="viewer-leak-label">
+              <figcaption class="pane-label" id="viewer-leak-label"><span class="pane-indicator" aria-hidden="true"></span>观众席 <small>空白遮罩</small></figcaption>
+              <div class="viewer-matte viewer-matte-leak">
+                <img src="./assets/threshold.webp" alt="同一条走廊的门框，出现在本应空白的观众席" loading="lazy">
+                <span class="viewer-leak-wash" aria-hidden="true"></span>
+                <span class="viewer-leak-label">检测到布景边缘</span>
+              </div>
+            </figure>
+            <figure class="scene-pane scene-pane-set" aria-labelledby="scene-sealed-label">
+              <figcaption class="pane-label" id="scene-sealed-label"><span class="pane-indicator" aria-hidden="true"></span>布景区 <small>封存 · 输出停止</small></figcaption>
+              <div class="scene-viewport sealed-scene"><img class="scene-image" src="./assets/threshold.webp" alt="相同的走廊布景仍然停在门口" loading="lazy"><span class="sealed-band">封存完成</span></div>
+            </figure>
+          </div>
+          <p class="receipt-result receipt-result-warning"><span>回执状态</span><strong>封存完成</strong><span>观众席预览</span><strong>出现布景内容</strong></p>
+        </div>
+      </section>
+
+      <section class="projection-section section-shell reveal" id="impossible-view" aria-labelledby="projection-title" data-scene-beat="6">
+        <div class="projection-copy">
+          <p class="section-label">观众席预览 · 仍未解封</p>
+          <h2 id="projection-title">门还在原处。<br><em>影子却靠近了。</em></h2>
+          <p>布景区里的门保持着原来的距离。观众席里的同一扇门，像是贴到了遮罩背后。</p>
+          <div class="projection-state"><span>布景状态</span><strong>已封存</strong><span>灯光输出</span><strong>已停止</strong></div>
+        </div>
+        <div class="scene-console projection-console">
+          <div class="scene-console-top"><span class="mini-avatar" aria-hidden="true">✦</span><strong>场景边界检查</strong><span class="scene-console-status">边界保持封存</span></div>
+          <div class="scene-panes">
+            <figure class="scene-pane scene-pane-viewer viewer-near">
+              <figcaption class="pane-label"><span class="pane-indicator" aria-hidden="true"></span>观众席 <small>空白遮罩</small></figcaption>
+              <div class="viewer-matte viewer-near-matte">
+                <img src="./assets/threshold.webp" alt="走廊门框与远处身影在观众席预览中变得异常靠近" loading="lazy">
+                <span class="viewer-near-shadow" aria-hidden="true"></span>
+                <span class="viewer-leak-label">同一扇门 · 近景</span>
+              </div>
+            </figure>
+            <figure class="scene-pane scene-pane-set">
+              <figcaption class="pane-label"><span class="pane-indicator" aria-hidden="true"></span>布景区 <small>封存状态保持</small></figcaption>
+              <div class="scene-viewport projection-scene"><img class="scene-image" src="./assets/threshold.webp" alt="布景区仍是完整、较远的走廊视角" loading="lazy"><span class="sealed-band">输出已停止</span></div>
+            </figure>
           </div>
         </div>
       </section>
 
-      <section class="session-log section-shell" id="session-log" aria-labelledby="session-title">
-        <div class="session-intro reveal">
-          <p class="section-label">会话记录 · 23:41</p>
-          <h2 id="session-title">同一段话，<br><em>出现了两次。</em></h2>
-          <p>回顾里新增了一份记录。消息内容相同，时间却早了一秒。</p>
+      <section class="source-trace section-shell reveal" id="source-trace" aria-labelledby="trace-title" data-scene-beat="7">
+        <div class="trace-copy">
+          <p class="section-label">恢复尝试</p>
+          <h2 id="trace-title">重新铺好空白。<br><em>来源却在观众席。</em></h2>
+          <p>复位只会重铺遮罩。画面来源标记仍指向这一侧。</p>
         </div>
-        <div class="session-card reveal" aria-label="重复的示例会话记录">
-          <div class="session-card-head"><span class="mini-avatar" aria-hidden="true">✦</span><strong>米拉 · 聊天记录</strong><span>23:41</span></div>
-          <div class="session-pair session-pair-early">
-            <time datetime="23:41:01">23:41:01</time>
-            <p class="bubble bubble-you" id="history-user-early" data-demo-sync="user">今天有点累。</p>
-            <time datetime="23:41:04">23:41:04</time>
-            <p class="bubble bubble-mira" id="history-reply-early" data-demo-sync="reply">那我们先不急着做什么。愿意说说今天最累的一件事吗？</p>
-          </div>
-          <div class="session-pair">
-            <time datetime="23:41:02">23:41:02</time>
-            <p class="bubble bubble-you" id="history-user" data-demo-sync="user">今天有点累。</p>
-            <time datetime="23:41:05">23:41:05</time>
-            <p class="bubble bubble-mira" id="history-reply" data-demo-sync="reply">那我们先不急着做什么。愿意说说今天最累的一件事吗？</p>
-          </div>
-          <p class="session-difference">两份记录只差一秒。</p>
-          <div class="session-divider"></div>
-          <p class="bubble bubble-you session-goodnight"><span>我先去休息了。晚安。</span><span class="bubble-time">23:41:19</span></p>
-          <p class="bubble bubble-mira"><span>好，晚安。今天的对话到这里。</span><span class="bubble-time">23:41:20</span></p>
-          <p class="chat-status"><span class="status-check" aria-hidden="true">✓</span> 对话已结束 · 23:41:21</p>
-          <div class="after-end-message">
-            <time datetime="23:41:22">23:41:22 · 新消息</time>
-            <p class="bubble bubble-you">我先去休息了。晚安。</p>
-          </div>
+        <div class="trace-panel">
+          <div class="trace-panel-head"><span>边界状态</span><strong>布景已封存</strong></div>
+          <div class="trace-row"><span>布景区</span><strong>灯光停止 · 封存完成</strong></div>
+          <div class="trace-row"><span>观众席</span><strong>显示同一段走廊</strong></div>
+          <div class="trace-row trace-source"><span>画面来源</span><strong>观众席 / 静态场景预览</strong></div>
+          <figure class="trace-image">
+            <img src="./assets/threshold.webp" alt="布景区门口的动画场景，在观众席来源记录中再次出现" loading="lazy">
+            <figcaption>场景来源与预览画面完全一致。</figcaption>
+          </figure>
         </div>
       </section>
 
-      <section class="status-section section-shell reveal" id="status" aria-labelledby="status-title">
-        <div class="status-copy">
-          <p class="section-label">连接状态</p>
-          <h2 id="status-title">会话已经结束。<br><em>输出还在继续。</em></h2>
-          <p>检查记录显示，结束之后仍有一条内容正在发出。</p>
-        </div>
-        <div class="status-card" aria-label="示例诊断状态">
-          <div class="status-card-head"><span>诊断摘要</span><span>23:41:24</span></div>
-          <div><span>会话</span><strong>已结束 · 23:41:21</strong></div>
-          <div><span>输入队列</span><strong>已清空 · 0 条</strong></div>
-          <div class="status-outgoing"><span>输出队列</span><strong><i aria-hidden="true"></i> 发送中 · 1 条</strong></div>
-          <div><span>读取来源</span><strong>最后一次回放</strong></div>
-        </div>
-      </section>
-
-      <section class="help-section section-shell reveal" id="help" aria-labelledby="help-title">
-        <div class="help-heading">
-          <p class="section-label">帮助中心</p>
-          <h2 id="help-title">回顾里没有视频，<br><em>为什么正在播放？</em></h2>
-        </div>
-        <div class="help-answer">
-          <p class="help-question">我没有录制，为什么会出现影像？</p>
-          <p class="help-response">回顾原本只显示文字和一张静态封面，不会录制视频。</p>
-          <div class="help-source-cover">
-            <img src="./assets/threshold.webp" alt="回顾中的米拉待机插画，画面是走廊和远处的身影" loading="lazy">
-            <div><span>封面来源</span><strong>待机插画 04 → 实时画面</strong><time datetime="23:41:24">23:41:24</time></div>
-          </div>
-          <p class="help-source">读取来源：走廊画面 · 04</p>
-          <p class="help-last">正在打开最后一段影像…</p>
-        </div>
-      </section>
-
-      <div class="replay-transition" aria-hidden="true"></div>
-      <section class="replay-runway" id="replay-runway" aria-label="走廊回放从动画逐步变成真实影像">
+      <section class="replay-runway" id="replay-runway" aria-label="分屏场景逐渐从动画转为录像和实时影像" data-scene-beat="8">
         <div class="replay-sticky">
           <div class="replay-copy">
-            <p class="section-label">最后一次回放</p>
-            <h2>画面没有<br><em>停在晚安。</em></h2>
-            <p>走廊 · 摄像头 04</p>
-            <p class="replay-step" id="replay-step">读取回放 · 23:41:24</p>
+            <p class="section-label">观众席 · 复位检查</p>
+            <h2>复位完成。<br><em>等待空白画面。</em></h2>
+            <p>布景已封存，正在检查观众席。</p>
+            <p class="replay-step" data-replay-phase>布景封存 · 观众席无画面</p>
           </div>
           <figure class="replay-window" aria-labelledby="replay-caption">
             <div class="replay-screen">
-              <figure class="replay-frame replay-frame-cel"><img class="replay-layer replay-layer-cel" src="./assets/threshold.webp" alt=""><figcaption>动画分镜 · 待机插画 04</figcaption></figure>
-              <figure class="replay-frame replay-frame-recording"><img class="replay-layer replay-layer-recording" src="./assets/recording.webp" alt=""><figcaption>录像记录 · 23:41:24</figcaption></figure>
-              <figure class="replay-frame replay-frame-finale"><img class="replay-layer replay-layer-finale" src="./assets/finale.webp" alt=""><figcaption>实时画面</figcaption></figure>
+              <figure class="replay-frame replay-frame-cel"><img src="./assets/threshold.webp" alt="动画走廊布景中的米拉站在门口" loading="lazy"><figcaption>布景封面 · 动画帧</figcaption></figure>
+              <figure class="replay-frame replay-frame-recording"><img src="./assets/recording.webp" alt="相同走廊和门口的录像质感画面" loading="lazy"><figcaption>相同构图 · 录像画面</figcaption></figure>
+              <figure class="replay-frame replay-frame-finale"><img src="./assets/finale.webp" alt="暗红走廊里的米拉剪影与咧开的笑容" loading="lazy"><figcaption>观众席画面 · 实时影像</figcaption></figure>
               <div class="replay-wear" aria-hidden="true"></div>
-              <div class="replay-toolbar"><span>MIRA · 回放</span><span>CAM 04</span></div>
-              <div class="replay-record"><span class="record-dot" aria-hidden="true"></span> REC&nbsp; 23:41:24</div>
+              <div class="replay-toolbar"><span>虚拟散步 · 观众席预览</span><span>场景封存中</span></div>
+              <div class="replay-record">空白遮罩 · 仍在显示</div>
             </div>
-            <figcaption class="sr-only" id="replay-caption">同一个走廊镜头，依次显示动画画面、录像质感画面和最终的真实感影像。</figcaption>
+            <figcaption class="sr-only" id="replay-caption">同一个分屏界面逐渐扩大：走廊布景从动画画面变为录像质感，最后成为暗红的实时影像。</figcaption>
           </figure>
-          <div class="replay-final-note" id="replay-final-note" aria-live="polite">
-            <p>米拉 · 新消息 · 23:41:25</p>
-            <strong>我先去休息了。晚安。</strong>
+          <div class="replay-final-note">
+            <p>米拉 · 观众席消息</p>
+            <strong>到门口就好。剩下的路，我已经走完了。</strong>
           </div>
         </div>
       </section>
 
-      <section class="finale" id="finale" aria-labelledby="finale-title">
+      <section class="finale" id="finale" aria-labelledby="finale-title" data-scene-beat="9">
         <div class="finale-image" aria-hidden="true"></div>
         <div class="finale-grain" aria-hidden="true"></div>
         <div class="finale-content">
-          <p class="finale-kicker"><span class="status-dot"></span> 米拉 · 记忆空间</p>
-          <p class="finale-room">— 回忆档案 01 · 持续播放 —</p>
-          <h2 id="finale-title">你终于<br><em>回来了。</em></h2>
-          <p class="finale-line">米拉：<br>“我先去休息了。晚安。”</p>
-          <p class="finale-caption">对话状态：已结束</p>
+          <p class="finale-kicker"><span class="status-dot"></span> 米拉 · 布景区已封存</p>
+          <p class="finale-room">— 观众席画面仍在显示 —</p>
+          <h2 id="finale-title">到门口就好。<br><em>剩下的路，我已经走完了。</em></h2>
+          <p class="finale-line">布景区：仍封存。<br>观众席：米拉。</p>
+          <p class="finale-caption">到门口就好。剩下的路，我已经走完了。</p>
           <a class="return-link" href="#top">回到首页 <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="finale-bottom"><span>故事仍在播放</span><span>回忆空间 · 01</span><a href="#top">从头再看 ↑</a></div>
+        <div class="finale-bottom"><span>虚拟散步 · 米拉</span><span>观众席预览仍开启</span><a href="#top">从头再看 ↑</a></div>
       </section>
     </main>
 
     <footer class="site-footer">
       <a class="brand" href="#top" aria-label="返回 MIRA 米拉首页"><span class="brand-sparkle" aria-hidden="true">✦</span><span class="brand-name">MIRA<small>米拉</small></span></a>
-      <p>把今天说给我听。<span aria-hidden="true">♡</span></p>
+      <p>把一句话，变成一起去过的地方。<span aria-hidden="true">♡</span></p>
       <a class="footer-top" href="#top">返回顶部 ↑</a>
-      <small>米拉是一个虚构的数字伙伴故事。</small>
+      <small>虚拟散步 · 米拉</small>
     </footer>
   </body>
 </html>
